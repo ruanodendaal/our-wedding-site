@@ -14,6 +14,9 @@ $data 			= array(); 		// array to pass back data
 	if (empty($_POST['inputEmail']))
 		$errors['email'] = 'Email is required.';
 
+	if (empty($_POST['inputComment']))
+		$errors['comment'] = 'Comment is required.';
+
 // return a response ===========================================================
 
 	// if there are any errors in our errors array, return a success boolean of false
@@ -29,14 +32,14 @@ $data 			= array(); 		// array to pass back data
     	//If there is no errors, send the email
     	if( empty($errors) ) {
 
-			$subject = 'RSVP Form';
+			$subject = 'Comment Form';
 			$headers = 'From: ' . $send_to . "\r\n" .
 			    'Reply-To: ' . $send_to . "\r\n" .
 			    'X-Mailer: PHP/' . phpversion();
 
-        	$message = 'Name: ' . $_POST['inputName'] . 'Email: ' . $_POST['inputEmail'] . 'Comment: ' . $_POST['inputComment'] . 'Attending: ' . $_POST['selectAttending'];
+        	$message = 'Name: ' . $_POST['inputName'] . 'Email: ' . $_POST['inputEmail'] . 'Comment: ' . $_POST['inputComment'];
 
-        	$headers = 'From: RSVP Form' . '<' . $send_to . '>' . "\r\n" . 'Reply-To: ' . $_POST['inputEmail'];
+        	$headers = 'From: Comment Form' . '<' . $send_to . '>' . "\r\n" . 'Reply-To: ' . $_POST['inputEmail'];
 
         	mail($send_to, $subject, $message, $headers);
 
