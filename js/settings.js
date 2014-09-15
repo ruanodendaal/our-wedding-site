@@ -114,7 +114,7 @@
 				after: '0s',
 				enter: 'top',
 				move: '50px',
-				over: '0.66s',
+				over: '0.33s',
 				easing: 'ease-in-out',
 				viewportFactor: 0.33,
 				reset: false,
