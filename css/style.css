@@ -277,7 +277,7 @@ section {
 /* PEOPLE & ACCOMMODATION
 =========================================================================================*/
 #people {
-	background: #ffffff;
+	background: #F8F7F2;
 }
 
 #people h5,
@@ -298,7 +298,7 @@ section {
 =========================================================================================*/
 
 .blog-short {
-	background: #fff;
+	background: #FDFCFB;
 	border-radius: 5px;
 	margin-bottom: 30px;
 	overflow: hidden;
