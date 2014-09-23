@@ -437,6 +437,7 @@ section {
 	position: absolute;
 	top: 0;
 	width: 100%;
+	background-repeat: no-repeat;
 }
 
 #facts h3 {
