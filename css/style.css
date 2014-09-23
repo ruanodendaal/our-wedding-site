@@ -277,13 +277,7 @@ section {
 /* PEOPLE & ACCOMMODATION
 =========================================================================================*/
 #people {
-	background-image: url(../images/lookout.jpg);
-	background-repeat: no-repeat;
-	/*background-size:100% 100%; */
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: #ffffff;
 }
 
 #people h5,
@@ -294,11 +288,6 @@ section {
 #people h6,
 #accommodation h6 {
 	margin: 0 0 15px;
-}
-
-#people p{
-	color: #fff;
-
 }
 
 .row-margin {
