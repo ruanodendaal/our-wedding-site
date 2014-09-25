@@ -14,8 +14,6 @@ $data 			= array(); 		// array to pass back data
 	if (empty($_POST['inputEmail']))
 		$errors['email'] = 'Email is required.';
 
-	if (empty($_POST['inputComment']))
-		$errors['comment'] = 'Comment is required.';
 
 // return a response ===========================================================
 
