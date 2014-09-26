@@ -12,7 +12,7 @@ $(document).ready(function() {
 		var formData = {
 			'inputName' 			: $('input[name=inputName]').val(),
 			'inputEmail' 			: $('input[name=inputEmail]').val(),
-			'inputComment' 	        : $('input[name=inputComment]').val(),
+			'inputComment' 	        : $('textarea[name=inputComment]').val(),
 		};
 
 		// process the form
