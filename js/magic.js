@@ -12,8 +12,7 @@ $(document).ready(function() {
 		var formData = {
 			'inputName' 			: $('input[name=inputName]').val(),
 			'inputEmail' 			: $('input[name=inputEmail]').val(),
-			'selectGuests' 	        : $('select[name=selectGuests]').val(),
-			'selectAttending' 	    : $('select[name=selectAttending]').val()
+			'inputComment' 	        : $('input[name=inputComment]').val(),
 		};
 
 		// process the form

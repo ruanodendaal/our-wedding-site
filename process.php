@@ -35,7 +35,9 @@ $data 			= array(); 		// array to pass back data
 			    'Reply-To: ' . $send_to . "\r\n" .
 			    'X-Mailer: PHP/' . phpversion();
 
-        	$message = 'Name: ' . $_POST['inputName'] . 'Email: ' . $_POST['inputEmail'] . 'Comment: ' . $_POST['inputComment'];
+        	$message = 'Name: ' . $_POST['inputName'] . <br> 
+        	'Email: ' . $_POST['inputEmail'] . <br> 
+        	'Comment: ' . $_POST['inputComment'];
 
         	$headers = 'From: Comment Form' . '<' . $send_to . '>' . "\r\n" . 'Reply-To: ' . $_POST['inputEmail'];
 
@@ -50,3 +52,4 @@ $data 			= array(); 		// array to pass back data
 
 	// return all our data to an AJAX call
 	echo json_encode($data);
+	?>
