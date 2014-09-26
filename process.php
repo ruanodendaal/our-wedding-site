@@ -35,8 +35,8 @@ $data 			= array(); 		// array to pass back data
 			    'Reply-To: ' . $send_to . "\r\n" .
 			    'X-Mailer: PHP/' . phpversion();
 
-        	$message = 'Name: ' . $_POST['inputName'] . <br> 
-        	'Email: ' . $_POST['inputEmail'] . <br> 
+        	$message = 'Name: ' . $_POST['inputName'] .
+        	'Email: ' . $_POST['inputEmail'] . 
         	'Comment: ' . $_POST['inputComment'];
 
         	$headers = 'From: Comment Form' . '<' . $send_to . '>' . "\r\n" . 'Reply-To: ' . $_POST['inputEmail'];
